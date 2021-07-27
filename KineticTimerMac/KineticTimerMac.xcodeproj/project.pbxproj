@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B855F26B04E9000E2560E /* AppDelegate.swift */; };
+		4F8B856226B04E9000E2560E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B856126B04E9000E2560E /* ContentView.swift */; };
+		4F8B856426B04E9100E2560E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8B856326B04E9100E2560E /* Assets.xcassets */; };
+		4F8B856726B04E9100E2560E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8B856626B04E9100E2560E /* Preview Assets.xcassets */; };
+		4F8B856A26B04E9100E2560E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8B856826B04E9100E2560E /* Main.storyboard */; };
+		4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B857526B04E9200E2560E /* KineticTimerMacTests.swift */; };
+		4F8B858126B04E9200E2560E /* KineticTimerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */; };
+		4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858E26B04F5300E2560E /* StatusBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F8B857226B04E9200E2560E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8B855426B04E9000E2560E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8B855B26B04E9000E2560E;
+			remoteInfo = KineticTimerMac;
+		};
+		4F8B857D26B04E9200E2560E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8B855426B04E9000E2560E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8B855B26B04E9000E2560E;
+			remoteInfo = KineticTimerMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F8B855C26B04E9000E2560E /* KineticTimerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineticTimerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8B855F26B04E9000E2560E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F8B856126B04E9000E2560E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F8B856326B04E9100E2560E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F8B856626B04E9100E2560E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F8B856926B04E9100E2560E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F8B856B26B04E9100E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8B856C26B04E9100E2560E /* KineticTimerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KineticTimerMac.entitlements; sourceTree = "<group>"; };
+		4F8B857126B04E9200E2560E /* KineticTimerMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KineticTimerMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8B857526B04E9200E2560E /* KineticTimerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticTimerMacTests.swift; sourceTree = "<group>"; };
+		4F8B857726B04E9200E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8B857C26B04E9200E2560E /* KineticTimerMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KineticTimerMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticTimerMacUITests.swift; sourceTree = "<group>"; };
+		4F8B858226B04E9200E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8B858E26B04F5300E2560E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F8B855926B04E9000E2560E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B856E26B04E9200E2560E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B857926B04E9200E2560E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F8B855326B04E9000E2560E = {
+			isa = PBXGroup;
+			children = (
+				4F8B855E26B04E9000E2560E /* KineticTimerMac */,
+				4F8B857426B04E9200E2560E /* KineticTimerMacTests */,
+				4F8B857F26B04E9200E2560E /* KineticTimerMacUITests */,
+				4F8B855D26B04E9000E2560E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F8B855D26B04E9000E2560E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B855C26B04E9000E2560E /* KineticTimerMac.app */,
+				4F8B857126B04E9200E2560E /* KineticTimerMacTests.xctest */,
+				4F8B857C26B04E9200E2560E /* KineticTimerMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F8B855E26B04E9000E2560E /* KineticTimerMac */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B859026B052EF00E2560E /* Resources */,
+				4F8B855F26B04E9000E2560E /* AppDelegate.swift */,
+				4F8B856126B04E9000E2560E /* ContentView.swift */,
+				4F8B856326B04E9100E2560E /* Assets.xcassets */,
+				4F8B856826B04E9100E2560E /* Main.storyboard */,
+				4F8B856B26B04E9100E2560E /* Info.plist */,
+				4F8B856C26B04E9100E2560E /* KineticTimerMac.entitlements */,
+				4F8B856526B04E9100E2560E /* Preview Content */,
+				4F8B858E26B04F5300E2560E /* StatusBarController.swift */,
+			);
+			path = KineticTimerMac;
+			sourceTree = "<group>";
+		};
+		4F8B856526B04E9100E2560E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B856626B04E9100E2560E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F8B857426B04E9200E2560E /* KineticTimerMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B857526B04E9200E2560E /* KineticTimerMacTests.swift */,
+				4F8B857726B04E9200E2560E /* Info.plist */,
+			);
+			path = KineticTimerMacTests;
+			sourceTree = "<group>";
+		};
+		4F8B857F26B04E9200E2560E /* KineticTimerMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */,
+				4F8B858226B04E9200E2560E /* Info.plist */,
+			);
+			path = KineticTimerMacUITests;
+			sourceTree = "<group>";
+		};
+		4F8B859026B052EF00E2560E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F8B855B26B04E9000E2560E /* KineticTimerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8B858526B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMac" */;
+			buildPhases = (
+				4F8B855826B04E9000E2560E /* Sources */,
+				4F8B855926B04E9000E2560E /* Frameworks */,
+				4F8B855A26B04E9000E2560E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KineticTimerMac;
+			productName = KineticTimerMac;
+			productReference = 4F8B855C26B04E9000E2560E /* KineticTimerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F8B857026B04E9200E2560E /* KineticTimerMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8B858826B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMacTests" */;
+			buildPhases = (
+				4F8B856D26B04E9200E2560E /* Sources */,
+				4F8B856E26B04E9200E2560E /* Frameworks */,
+				4F8B856F26B04E9200E2560E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8B857326B04E9200E2560E /* PBXTargetDependency */,
+			);
+			name = KineticTimerMacTests;
+			productName = KineticTimerMacTests;
+			productReference = 4F8B857126B04E9200E2560E /* KineticTimerMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F8B857B26B04E9200E2560E /* KineticTimerMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8B858B26B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMacUITests" */;
+			buildPhases = (
+				4F8B857826B04E9200E2560E /* Sources */,
+				4F8B857926B04E9200E2560E /* Frameworks */,
+				4F8B857A26B04E9200E2560E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8B857E26B04E9200E2560E /* PBXTargetDependency */,
+			);
+			name = KineticTimerMacUITests;
+			productName = KineticTimerMacUITests;
+			productReference = 4F8B857C26B04E9200E2560E /* KineticTimerMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F8B855426B04E9000E2560E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4F8B855B26B04E9000E2560E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					4F8B857026B04E9200E2560E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4F8B855B26B04E9000E2560E;
+					};
+					4F8B857B26B04E9200E2560E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4F8B855B26B04E9000E2560E;
+					};
+				};
+			};
+			buildConfigurationList = 4F8B855726B04E9000E2560E /* Build configuration list for PBXProject "KineticTimerMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F8B855326B04E9000E2560E;
+			productRefGroup = 4F8B855D26B04E9000E2560E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F8B855B26B04E9000E2560E /* KineticTimerMac */,
+				4F8B857026B04E9200E2560E /* KineticTimerMacTests */,
+				4F8B857B26B04E9200E2560E /* KineticTimerMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F8B855A26B04E9000E2560E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8B856A26B04E9100E2560E /* Main.storyboard in Resources */,
+				4F8B856726B04E9100E2560E /* Preview Assets.xcassets in Resources */,
+				4F8B856426B04E9100E2560E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B856F26B04E9200E2560E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B857A26B04E9200E2560E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F8B855826B04E9000E2560E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8B856226B04E9000E2560E /* ContentView.swift in Sources */,
+				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
+				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B856D26B04E9200E2560E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8B857826B04E9200E2560E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8B858126B04E9200E2560E /* KineticTimerMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8B857326B04E9200E2560E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8B855B26B04E9000E2560E /* KineticTimerMac */;
+			targetProxy = 4F8B857226B04E9200E2560E /* PBXContainerItemProxy */;
+		};
+		4F8B857E26B04E9200E2560E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8B855B26B04E9000E2560E /* KineticTimerMac */;
+			targetProxy = 4F8B857D26B04E9200E2560E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F8B856826B04E9100E2560E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F8B856926B04E9100E2560E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F8B858326B04E9200E2560E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F8B858426B04E9200E2560E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4F8B858626B04E9200E2560E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KineticTimerMac/KineticTimerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KineticTimerMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6Q845W864;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KineticTimerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4F8B858726B04E9200E2560E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KineticTimerMac/KineticTimerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KineticTimerMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6Q845W864;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KineticTimerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4F8B858926B04E9200E2560E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D6Q845W864;
+				INFOPLIST_FILE = KineticTimerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KineticTimerMac.app/Contents/MacOS/KineticTimerMac";
+			};
+			name = Debug;
+		};
+		4F8B858A26B04E9200E2560E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D6Q845W864;
+				INFOPLIST_FILE = KineticTimerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KineticTimerMac.app/Contents/MacOS/KineticTimerMac";
+			};
+			name = Release;
+		};
+		4F8B858C26B04E9200E2560E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D6Q845W864;
+				INFOPLIST_FILE = KineticTimerMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KineticTimerMac;
+			};
+			name = Debug;
+		};
+		4F8B858D26B04E9200E2560E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D6Q845W864;
+				INFOPLIST_FILE = KineticTimerMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KineticTimerMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F8B855726B04E9000E2560E /* Build configuration list for PBXProject "KineticTimerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8B858326B04E9200E2560E /* Debug */,
+				4F8B858426B04E9200E2560E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8B858526B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8B858626B04E9200E2560E /* Debug */,
+				4F8B858726B04E9200E2560E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8B858826B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8B858926B04E9200E2560E /* Debug */,
+				4F8B858A26B04E9200E2560E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8B858B26B04E9200E2560E /* Build configuration list for PBXNativeTarget "KineticTimerMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8B858C26B04E9200E2560E /* Debug */,
+				4F8B858D26B04E9200E2560E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F8B855426B04E9000E2560E /* Project object */;
+}
