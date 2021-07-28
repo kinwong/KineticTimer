@@ -25,24 +25,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = .transient
         popover.contentViewController = NSHostingController(rootView: contentView)
         self.popover = popover
+
+        self.statusBarItem  = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+        if let button = self.statusBarItem.button {
+          button.image = NSImage(named: "Icon")
+          button.action = #selector(printQuote(_:))
+        }
         
         // Create the status item
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         
         if let button = self.statusBarItem.button {
             button.image = NSImage(named: "Icon")
-            button.action = #selector(togglePopover(_:))
+            //button.action = #selector(togglePopover(_:))
         }
+        constructMenu()
+        
     }
     
-    @objc func togglePopover(_ sender: AnyObject?) {
-        if let button = self.statusBarItem.button {
-            if self.popover.isShown {
-                self.popover.performClose(sender)
-            } else {
-                self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
-            }
-        }
+    func constructMenu() {
+      let menu = NSMenu()
+
+      menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(printQuote(_:)), keyEquivalent: "P"))
+      menu.addItem(NSMenuItem.separator())
+      menu.addItem(NSMenuItem(title: "Exit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+    self.statusBarItem.menu = menu
     }
+    
+    @objc func printQuote(_ sender: Any?) {
+      let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
+      let quoteAuthor = "Mark Twain"
+      
+      print("\(quoteText) — \(quoteAuthor)")
+    }
+    //    @objc func togglePopover(_ sender: AnyObject?) {
+//        if let button = self.statusBarItem.button {
+//            if self.popover.isShown {
+//                self.popover.performClose(sender)
+//            } else {
+//                self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+//            }
+//        }
+//    }
 }
 
