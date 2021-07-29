@@ -76,6 +76,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print("showPreferences")
     }
     
+    @objc func showAbout(_ sender: NSMenuItem?) {
+    }
+
     private func setTimer(duration: TimeInterval) {
         print("duration: \(duration)")
     }

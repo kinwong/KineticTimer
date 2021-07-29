@@ -42,9 +42,10 @@ class AppMenu : NSMenu {
         ]
         items = [
             addTimer,
-            NSMenuItem(title: "Preferences...", action: #selector(delegate.showPreferences), keyEquivalent: ","),
             NSMenuItem.separator(),
-            NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+            NSMenuItem(title: "Preferences...", action: #selector(delegate.showPreferences), keyEquivalent: ","),
+            NSMenuItem(title: "About...", action: #selector(delegate.showAbout), keyEquivalent: ","),
+            NSMenuItem(title: "Quit Kinetic Timer", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         ]
     }
 }
