@@ -6,7 +6,7 @@
 //
 // https://medium.com/@acwrightdesign/creating-a-macos-menu-bar-application-using-swiftui-54572a5d5f87
 // https://www.anaghsharma.com/blog/macos-menu-bar-app-with-swiftui/
-
+// https://medium.com/@theboi/macos-apps-without-storyboard-or-xib-menu-bar-in-swift-5-menubar-and-toolbar-6f6f2fa39ccb
 import Cocoa
 import SwiftUI
 
@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusBarItem  = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
         if let button = self.statusBarItem.button {
             button.image = NSImage(named: "Icon")
-            button.action = #selector(printQuote(_:))
+            // button.action = nil
         }
         
         // Create the status item
@@ -37,30 +37,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let button = self.statusBarItem.button {
             button.image = NSImage(named: "Icon")
-            //button.action = #selector(togglePopover(_:))
         }
-        constructMenu()
-        
+        let mainMenu = AppMenu();
+        mainMenu.appDelegate = self
+        statusBarItem.menu = mainMenu
     }
     
-    func constructMenu() {
-        let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(printQuote(_:)), keyEquivalent: "P"))
-        menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Preferences...", action: #selector(showPreferences(_:)), keyEquivalent: ","))
-        menu.addItem(NSMenuItem(title: "Exit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-        self.statusBarItem.menu = menu
-    }
     
-    @objc func printQuote(_ sender: Any?) {
-        let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
-        let quoteAuthor = "Mark Twain"
-        
-        print("\(quoteText) — \(quoteAuthor)")
+    @objc func setTimer1Min(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(1.0 * 60.0))
     }
-    
-    @objc func showPreferences(_ sender: Any?) {
+    @objc func setTimer2Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(2.0 * 60.0))
+    }
+    @objc func setTimer5Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(5.0 * 60.0))
+    }
+    @objc func setTimer10Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(10.0 * 60.0))
+    }
+    @objc func setTimer15Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(15.0 * 60.0))
+    }
+    @objc func setTimer30Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(30.0 * 60.0))
+    }
+    @objc func setTimer45Mins(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(45.0 * 60.0))
+    }
+    @objc func setTimer1Hour(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(1.0 * 60.0 * 60.0))
+    }
+    @objc func setTimer2Hours(_ sender: NSMenuItem?) {
+        setTimer(duration: TimeInterval(2.0 * 60.0 * 60.0))
+    }
+
+    @objc func showPreferences(_ sender: NSMenuItem?) {
         print("showPreferences")
+    }
+    
+    private func setTimer(duration: TimeInterval) {
+        print("duration: \(duration)")
     }
 }
 

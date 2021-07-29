@@ -15,6 +15,7 @@
 		4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B857526B04E9200E2560E /* KineticTimerMacTests.swift */; };
 		4F8B858126B04E9200E2560E /* KineticTimerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */; };
 		4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858E26B04F5300E2560E /* StatusBarController.swift */; };
+		4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B859126B2D19900E2560E /* AppMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticTimerMacUITests.swift; sourceTree = "<group>"; };
 		4F8B858226B04E9200E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8B858E26B04F5300E2560E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		4F8B859126B2D19900E2560E /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,6 @@
 		4F8B855E26B04E9000E2560E /* KineticTimerMac */ = {
 			isa = PBXGroup;
 			children = (
-				4F8B859026B052EF00E2560E /* Resources */,
 				4F8B855F26B04E9000E2560E /* AppDelegate.swift */,
 				4F8B856126B04E9000E2560E /* ContentView.swift */,
 				4F8B856326B04E9100E2560E /* Assets.xcassets */,
@@ -109,6 +110,7 @@
 				4F8B856C26B04E9100E2560E /* KineticTimerMac.entitlements */,
 				4F8B856526B04E9100E2560E /* Preview Content */,
 				4F8B858E26B04F5300E2560E /* StatusBarController.swift */,
+				4F8B859126B2D19900E2560E /* AppMenu.swift */,
 			);
 			path = KineticTimerMac;
 			sourceTree = "<group>";
@@ -137,13 +139,6 @@
 				4F8B858226B04E9200E2560E /* Info.plist */,
 			);
 			path = KineticTimerMacUITests;
-			sourceTree = "<group>";
-		};
-		4F8B859026B052EF00E2560E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +274,7 @@
 				4F8B856226B04E9000E2560E /* ContentView.swift in Sources */,
 				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
+				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
