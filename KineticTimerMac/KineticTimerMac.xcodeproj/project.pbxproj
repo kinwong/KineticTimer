@@ -16,6 +16,8 @@
 		4F8B858126B04E9200E2560E /* KineticTimerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */; };
 		4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858E26B04F5300E2560E /* StatusBarController.swift */; };
 		4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B859126B2D19900E2560E /* AppMenu.swift */; };
+		4F8B859E26B6446800E2560E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B859D26B6446800E2560E /* BaseViewController.swift */; };
+		4F8B85A026B64AD300E2560E /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B859F26B64AD300E2560E /* BaseWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		4F8B858226B04E9200E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8B858E26B04F5300E2560E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		4F8B859126B2D19900E2560E /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		4F8B859D26B6446800E2560E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4F8B859F26B64AD300E2560E /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		4F8B855E26B04E9000E2560E /* KineticTimerMac */ = {
 			isa = PBXGroup;
 			children = (
+				4F8B859C26B6440600E2560E /* Controllers */,
 				4F8B855F26B04E9000E2560E /* AppDelegate.swift */,
 				4F8B856126B04E9000E2560E /* ContentView.swift */,
 				4F8B856326B04E9100E2560E /* Assets.xcassets */,
@@ -139,6 +144,15 @@
 				4F8B858226B04E9200E2560E /* Info.plist */,
 			);
 			path = KineticTimerMacUITests;
+			sourceTree = "<group>";
+		};
+		4F8B859C26B6440600E2560E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B859D26B6446800E2560E /* BaseViewController.swift */,
+				4F8B859F26B64AD300E2560E /* BaseWindowController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +289,8 @@
 				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
 				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
+				4F8B85A026B64AD300E2560E /* BaseWindowController.swift in Sources */,
+				4F8B859E26B6446800E2560E /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -477,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

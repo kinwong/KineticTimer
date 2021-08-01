@@ -14,6 +14,7 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
     var popover: NSPopover!
     var statusBarItem: NSStatusItem!
+    var aboutWindowController: NSWindowController?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
@@ -77,6 +78,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func showAbout(_ sender: NSMenuItem?) {
+        if aboutWindowController == nil {
+            aboutWindowController = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "AboutWindowController") as? NSWindowController
+        }
+        
+        NSApp.activate(ignoringOtherApps: true)
+        if let about = aboutWindowController {
+            about.window?.makeKey()
+            about.window?.center()
+            about.showWindow(self)
+        }
     }
 
     private func setTimer(duration: TimeInterval) {

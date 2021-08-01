@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14814" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14814"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,11 +674,160 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="KineticTimerMac" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="PMl-Ox-8Fd">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="e5E-5B-wc7" sceneMemberID="viewController">
+                    <window key="window" title="Kinetic Timer Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titleVisibility="hidden" id="6hK-dU-EfS">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <view key="contentView" id="eLP-nT-lTD">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="e5E-5B-wc7" id="WQ2-3l-sAj"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XQp-ZG-vTK" kind="relationship" relationship="window.shadowedContentViewController" id="7hy-qY-G1d"/>
+                    </connections>
+                </windowController>
+                <customObject id="Muu-XL-2p6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="254"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="Zmj-jh-AQg">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" id="XQp-ZG-vTK" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="uwZ-6B-5XX"/>
+                        <tabViewItem identifier="" id="jBi-Em-iUW"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="tcD-lS-xhj">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="XQp-ZG-vTK" id="qBR-nU-E7s"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="tcD-lS-xhj" id="JOc-k7-5cV"/>
+                        <segue destination="2kB-1P-1EL" kind="relationship" relationship="tabItems" id="fL5-Vd-MyK"/>
+                        <segue destination="AcO-bQ-nW2" kind="relationship" relationship="tabItems" id="1pQ-BM-xLc"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="yml-59-dhV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="719"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="uGC-wv-gx8">
+            <objects>
+                <windowController storyboardIdentifier="AboutWindowController" showSeguePresentationStyle="single" id="Odf-Y5-KjL" customClass="BaseWindowController" customModule="KineticTimerMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="About " allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="XD8-4p-63j">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="328" height="190"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <view key="contentView" id="soG-ir-zZX">
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="190"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="Odf-Y5-KjL" id="WQ7-Jd-rpK"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Zob-3b-rMH" kind="relationship" relationship="window.shadowedContentViewController" id="cIR-sG-J6a"/>
+                    </connections>
+                </windowController>
+                <customObject id="mUs-EE-JDo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="13"/>
+        </scene>
+        <!--Base View Controller-->
+        <scene sceneID="gJB-Z2-9zx">
+            <objects>
+                <viewController id="Zob-3b-rMH" customClass="BaseViewController" customModule="KineticTimerMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="S1Z-4H-cv1">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="217"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-0W-OR5">
+                                <rect key="frame" x="134" y="111" width="94" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Kinetic Timer" id="tdI-3s-EpV">
+                                    <font key="font" textStyle="headline" name=".SFNS-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Rk-kpr">
+                                <rect key="frame" x="132" y="89" width="98" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 1.00 (00)" id="IU4-bx-aom">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ksX-3O-hs3">
+                                <rect key="frame" x="61" y="67" width="241" height="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Copyright 2021 Kin Wong. All right reserved." id="jqn-8Y-2Ud">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2MW-0W-OR5" firstAttribute="top" secondItem="S1Z-4H-cv1" secondAttribute="top" constant="90" id="3py-kc-wdN"/>
+                            <constraint firstItem="2MW-0W-OR5" firstAttribute="centerX" secondItem="S1Z-4H-cv1" secondAttribute="centerX" id="9yU-0t-NH1"/>
+                            <constraint firstItem="NB1-Rk-kpr" firstAttribute="top" secondItem="2MW-0W-OR5" secondAttribute="bottom" constant="8" symbolic="YES" id="Sws-LK-yKT"/>
+                            <constraint firstItem="ksX-3O-hs3" firstAttribute="centerX" secondItem="S1Z-4H-cv1" secondAttribute="centerX" id="YGP-NI-rzO"/>
+                            <constraint firstItem="NB1-Rk-kpr" firstAttribute="centerX" secondItem="S1Z-4H-cv1" secondAttribute="centerX" id="mhE-bS-5Qh"/>
+                            <constraint firstItem="ksX-3O-hs3" firstAttribute="top" secondItem="NB1-Rk-kpr" secondAttribute="bottom" constant="8" symbolic="YES" id="uhE-E3-cqk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="sbM-X4-OnF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-0.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lfl-mM-F4s">
+            <objects>
+                <viewController id="2kB-1P-1EL" sceneMemberID="viewController">
+                    <view key="view" id="gyK-7H-h8a">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="cP3-j3-we7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="frb-7M-xge">
+            <objects>
+                <viewController id="AcO-bQ-nW2" sceneMemberID="viewController">
+                    <view key="view" id="AuN-oh-zWb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="qkV-Pu-NaS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="881"/>
         </scene>
     </scenes>
 </document>
