@@ -683,7 +683,7 @@
         <!--Window Controller-->
         <scene sceneID="PMl-Ox-8Fd">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="e5E-5B-wc7" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="PreferencesWindowController" showSeguePresentationStyle="single" id="e5E-5B-wc7" sceneMemberID="viewController">
                     <window key="window" title="Kinetic Timer Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titleVisibility="hidden" id="6hK-dU-EfS">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -734,7 +734,7 @@
         <!--Window Controller-->
         <scene sceneID="uGC-wv-gx8">
             <objects>
-                <windowController storyboardIdentifier="AboutWindowController" showSeguePresentationStyle="single" id="Odf-Y5-KjL" customClass="BaseWindowController" customModule="KineticTimerMac" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="AboutWindowController" showSeguePresentationStyle="single" id="Odf-Y5-KjL" sceneMemberID="viewController">
                     <window key="window" title="About " allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="XD8-4p-63j">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -756,10 +756,10 @@
             </objects>
             <point key="canvasLocation" x="659" y="13"/>
         </scene>
-        <!--Base View Controller-->
+        <!--View Controller-->
         <scene sceneID="gJB-Z2-9zx">
             <objects>
-                <viewController id="Zob-3b-rMH" customClass="BaseViewController" customModule="KineticTimerMac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zob-3b-rMH" sceneMemberID="viewController">
                     <view key="view" id="S1Z-4H-cv1">
                         <rect key="frame" x="0.0" y="0.0" width="362" height="217"/>
                         <autoresizingMask key="autoresizingMask"/>
