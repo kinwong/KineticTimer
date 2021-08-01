@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var popover: NSPopover!
     var statusBarItem: NSStatusItem!
     var aboutWindowController: NSWindowController?
+    var timerController: TimerController?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
@@ -91,7 +92,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setTimer(duration: TimeInterval) {
-        print("duration: \(duration)")
+        if timerController == nil {
+            timerController = NSStoryboard(name: "TimerController", bundle: nil).instantiateController(withIdentifier: "TimerController") as? TimerController
+        }
+        
+        NSApp.activate(ignoringOtherApps: true)
+        if let timer = timerController {
+//            timer.window?.makeKey()
+//            timer.window?.center()
+//            timer.showWindow(self)
+        }
+
     }
 }
 

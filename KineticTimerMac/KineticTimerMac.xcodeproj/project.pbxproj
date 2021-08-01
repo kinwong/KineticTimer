@@ -16,6 +16,8 @@
 		4F8B858126B04E9200E2560E /* KineticTimerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858026B04E9200E2560E /* KineticTimerMacUITests.swift */; };
 		4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B858E26B04F5300E2560E /* StatusBarController.swift */; };
 		4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B859126B2D19900E2560E /* AppMenu.swift */; };
+		4FDF197426B65E0500F7FC24 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF197226B65E0500F7FC24 /* TimerController.swift */; };
+		4FDF197526B65E0500F7FC24 /* TimerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF197326B65E0500F7FC24 /* TimerController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		4F8B858226B04E9200E2560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8B858E26B04F5300E2560E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		4F8B859126B2D19900E2560E /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		4FDF197226B65E0500F7FC24 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		4FDF197326B65E0500F7FC24 /* TimerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		4F8B855E26B04E9000E2560E /* KineticTimerMac */ = {
 			isa = PBXGroup;
 			children = (
+				4FDF197026B65D9700F7FC24 /* Views */,
 				4F8B855F26B04E9000E2560E /* AppDelegate.swift */,
 				4F8B856126B04E9000E2560E /* ContentView.swift */,
 				4F8B856326B04E9100E2560E /* Assets.xcassets */,
@@ -139,6 +144,23 @@
 				4F8B858226B04E9200E2560E /* Info.plist */,
 			);
 			path = KineticTimerMacUITests;
+			sourceTree = "<group>";
+		};
+		4FDF197026B65D9700F7FC24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FDF197126B65DE000F7FC24 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FDF197126B65DE000F7FC24 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4FDF197226B65E0500F7FC24 /* TimerController.swift */,
+				4FDF197326B65E0500F7FC24 /* TimerController.xib */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8B856A26B04E9100E2560E /* Main.storyboard in Resources */,
+				4FDF197526B65E0500F7FC24 /* TimerController.xib in Resources */,
 				4F8B856726B04E9100E2560E /* Preview Assets.xcassets in Resources */,
 				4F8B856426B04E9100E2560E /* Assets.xcassets in Resources */,
 			);
@@ -273,6 +296,7 @@
 			files = (
 				4F8B856226B04E9000E2560E /* ContentView.swift in Sources */,
 				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
+				4FDF197426B65E0500F7FC24 /* TimerController.swift in Sources */,
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
 				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
 			);

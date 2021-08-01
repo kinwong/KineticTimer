@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TimerController" customModule="KineticTimerMac" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="TimerController" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-gJ-NOH">
+                    <rect key="frame" x="18" y="194" width="74" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Description" id="BYS-0J-ZJO">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRH-kd-5ze">
+                    <rect key="frame" x="18" y="141" width="56" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Duration" id="RgY-ga-uaO">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Twu-6N-BAS">
+                    <rect key="frame" x="20" y="165" width="371" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="1dY-rm-LYN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-xK-fBn">
+                    <rect key="frame" x="20" y="112" width="371" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="WUt-yF-brN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Se-WP-UMe">
+                    <rect key="frame" x="345" y="13" width="53" height="32"/>
+                    <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Brz-SC-2Zd">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-Uc-Mfz">
+                    <rect key="frame" x="271" y="13" width="76" height="32"/>
+                    <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MZW-HN-pIP">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kum-Uc-Mfz" secondAttribute="bottom" constant="20" symbolic="YES" id="4wb-gj-xzp"/>
+                <constraint firstItem="S8y-xK-fBn" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="6dK-68-qgV"/>
+                <constraint firstAttribute="trailing" secondItem="8Se-WP-UMe" secondAttribute="trailing" constant="20" symbolic="YES" id="AQq-nB-7s7"/>
+                <constraint firstItem="8Se-WP-UMe" firstAttribute="leading" secondItem="Kum-Uc-Mfz" secondAttribute="trailing" constant="12" symbolic="YES" id="Ic3-3p-Aud"/>
+                <constraint firstItem="S8y-xK-fBn" firstAttribute="top" secondItem="mRH-kd-5ze" secondAttribute="bottom" constant="8" symbolic="YES" id="QYm-8l-Hej"/>
+                <constraint firstAttribute="bottom" secondItem="8Se-WP-UMe" secondAttribute="bottom" constant="20" symbolic="YES" id="RAo-wo-sH5"/>
+                <constraint firstItem="S8y-xK-fBn" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="RgW-KT-Sv5"/>
+                <constraint firstItem="XvR-gJ-NOH" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="dbB-5f-1OO"/>
+                <constraint firstItem="Twu-6N-BAS" firstAttribute="top" secondItem="XvR-gJ-NOH" secondAttribute="bottom" constant="8" symbolic="YES" id="eKi-dh-jMv"/>
+                <constraint firstItem="XvR-gJ-NOH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="f4U-b0-0B4"/>
+                <constraint firstItem="Twu-6N-BAS" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="hJt-zl-JoK"/>
+                <constraint firstItem="mRH-kd-5ze" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="lvT-th-5tR"/>
+                <constraint firstItem="Twu-6N-BAS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="qve-zk-yWO"/>
+                <constraint firstItem="mRH-kd-5ze" firstAttribute="top" secondItem="Twu-6N-BAS" secondAttribute="bottom" constant="8" symbolic="YES" id="yqa-61-Yq2"/>
+            </constraints>
+            <point key="canvasLocation" x="104.5" y="133"/>
+        </customView>
+    </objects>
+</document>
