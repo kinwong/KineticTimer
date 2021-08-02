@@ -7,6 +7,7 @@
 // https://medium.com/@acwrightdesign/creating-a-macos-menu-bar-application-using-swiftui-54572a5d5f87
 // https://www.anaghsharma.com/blog/macos-menu-bar-app-with-swiftui/
 // https://medium.com/@theboi/macos-apps-without-storyboard-or-xib-menu-bar-in-swift-5-menubar-and-toolbar-6f6f2fa39ccb
+
 import Cocoa
 import SwiftUI
 
@@ -15,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var popover: NSPopover!
     var statusBarItem: NSStatusItem!
     var aboutWindowController: NSWindowController?
-    var timerController: TimerController?
+    var timerController: TimerWindowController?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
@@ -92,17 +93,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setTimer(duration: TimeInterval) {
-        if timerController == nil {
-            timerController = NSStoryboard(name: "TimerController", bundle: nil).instantiateController(withIdentifier: "TimerController") as? TimerController
-        }
-        
         NSApp.activate(ignoringOtherApps: true)
-        if let timer = timerController {
-//            timer.window?.makeKey()
-//            timer.window?.center()
-//            timer.showWindow(self)
+        if timerController == nil {
+            timerController = TimerWindowController(windowNibName: "TimerWindowController")
         }
-
+        if let timer = timerController {
+            timer.window?.center()
+            timer.showWindow(self)
+        }
     }
 }
 
