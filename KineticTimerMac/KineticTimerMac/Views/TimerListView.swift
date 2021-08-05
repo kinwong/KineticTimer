@@ -35,16 +35,16 @@ struct TimerListView: View {
 
 extension TimerListView {
     final class Model: ObservableObject {
-        @Published var timers = [Timer]()
+        @Published var timers = [TimerDescription]()
     }
 }
 
 struct TimerListView_Previews: PreviewProvider {
     static var previews: some View {
         let model = TimerListView.Model()
-        model.timers.append(Timer(id: 1, description: "Timer 1"))
-        model.timers.append(Timer(id: 2, description: "Timer 2"))
-        model.timers.append(Timer(id: 3, description: "Timer 3"))
+        model.timers.append(TimerDescription(id: 1, description: "Timer 1"))
+        model.timers.append(TimerDescription(id: 2, description: "Timer 2"))
+        model.timers.append(TimerDescription(id: 3, description: "Timer 3"))
         return TimerListView(viewModel: model)
     }
 }

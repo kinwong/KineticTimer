@@ -21,9 +21,13 @@
 		4FDF197C26B827E100F7FC24 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF197A26B827E100F7FC24 /* TimerWindowController.swift */; };
 		4FDF197D26B827E100F7FC24 /* TimerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF197B26B827E100F7FC24 /* TimerWindowController.xib */; };
 		4FDF198C26B9A5D900F7FC24 /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF198B26B9A5D900F7FC24 /* TimerListView.swift */; };
-		4FDF198F26BC104300F7FC24 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF198E26BC104300F7FC24 /* Timer.swift */; };
+		4FDF198F26BC104300F7FC24 /* TimerDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF198E26BC104300F7FC24 /* TimerDescription.swift */; };
 		4FF4608826BC202B00A6B8AB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608726BC202B00A6B8AB /* DataService.swift */; };
 		4FF4608926BC202B00A6B8AB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608726BC202B00A6B8AB /* DataService.swift */; };
+		4FF4608C26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608A26BC22C400A6B8AB /* Stash.xcdatamodeld */; };
+		4FF4608D26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608A26BC22C400A6B8AB /* Stash.xcdatamodeld */; };
+		4FF4608F26BC242400A6B8AB /* PersisteneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608E26BC242400A6B8AB /* PersisteneController.swift */; };
+		4FF4609026BC242400A6B8AB /* PersisteneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608E26BC242400A6B8AB /* PersisteneController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +69,10 @@
 		4FDF197A26B827E100F7FC24 /* TimerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWindowController.swift; sourceTree = "<group>"; };
 		4FDF197B26B827E100F7FC24 /* TimerWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerWindowController.xib; sourceTree = "<group>"; };
 		4FDF198B26B9A5D900F7FC24 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
-		4FDF198E26BC104300F7FC24 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		4FDF198E26BC104300F7FC24 /* TimerDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDescription.swift; sourceTree = "<group>"; };
 		4FF4608726BC202B00A6B8AB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4FF4608B26BC22C400A6B8AB /* Stash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stash.xcdatamodel; sourceTree = "<group>"; };
+		4FF4608E26BC242400A6B8AB /* PersisteneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisteneController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +188,9 @@
 		4FDF198D26BC103500F7FC24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4FDF198E26BC104300F7FC24 /* Timer.swift */,
+				4FDF198E26BC104300F7FC24 /* TimerDescription.swift */,
+				4FF4608A26BC22C400A6B8AB /* Stash.xcdatamodeld */,
+				4FF4608E26BC242400A6B8AB /* PersisteneController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,7 +347,9 @@
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
 				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
 				4FDF197C26B827E100F7FC24 /* TimerWindowController.swift in Sources */,
-				4FDF198F26BC104300F7FC24 /* Timer.swift in Sources */,
+				4FF4608F26BC242400A6B8AB /* PersisteneController.swift in Sources */,
+				4FDF198F26BC104300F7FC24 /* TimerDescription.swift in Sources */,
+				4FF4608C26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF4608D26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */,
 				4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */,
 				4FF4608926BC202B00A6B8AB /* DataService.swift in Sources */,
+				4FF4609026BC242400A6B8AB /* PersisteneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +686,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FF4608A26BC22C400A6B8AB /* Stash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FF4608B26BC22C400A6B8AB /* Stash.xcdatamodel */,
+			);
+			currentVersion = 4FF4608B26BC22C400A6B8AB /* Stash.xcdatamodel */;
+			path = Stash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F8B855426B04E9000E2560E /* Project object */;
 }
