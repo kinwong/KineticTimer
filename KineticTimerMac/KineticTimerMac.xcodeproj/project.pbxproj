@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F5BE56026C1A07F00A18516 /* TimerDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF198E26BC104300F7FC24 /* TimerDescription.swift */; };
 		4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B855F26B04E9000E2560E /* AppDelegate.swift */; };
 		4F8B856226B04E9000E2560E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B856126B04E9000E2560E /* ContentView.swift */; };
 		4F8B856426B04E9100E2560E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8B856326B04E9100E2560E /* Assets.xcassets */; };
@@ -28,6 +29,11 @@
 		4FF4608D26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608A26BC22C400A6B8AB /* Stash.xcdatamodeld */; };
 		4FF4608F26BC242400A6B8AB /* PersisteneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608E26BC242400A6B8AB /* PersisteneController.swift */; };
 		4FF4609026BC242400A6B8AB /* PersisteneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608E26BC242400A6B8AB /* PersisteneController.swift */; };
+		4FF4609326C1689B00A6B8AB /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609226C1689B00A6B8AB /* Time.swift */; };
+		4FF4609426C1689B00A6B8AB /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609226C1689B00A6B8AB /* Time.swift */; };
+		4FF4609626C1734D00A6B8AB /* Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609526C1734D00A6B8AB /* Always.swift */; };
+		4FF4609726C1734D00A6B8AB /* Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609526C1734D00A6B8AB /* Always.swift */; };
+		4FF4609B26C19D1100A6B8AB /* AlwaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,9 @@
 		4FF4608726BC202B00A6B8AB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4FF4608B26BC22C400A6B8AB /* Stash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stash.xcdatamodel; sourceTree = "<group>"; };
 		4FF4608E26BC242400A6B8AB /* PersisteneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisteneController.swift; sourceTree = "<group>"; };
+		4FF4609226C1689B00A6B8AB /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		4FF4609526C1734D00A6B8AB /* Always.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Always.swift; sourceTree = "<group>"; };
+		4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +132,7 @@
 		4F8B855E26B04E9000E2560E /* KineticTimerMac */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4609126C1683300A6B8AB /* Core */,
 				4FDF199026BC108700F7FC24 /* Services */,
 				4FDF198D26BC103500F7FC24 /* Models */,
 				4FDF197026B65D9700F7FC24 /* Views */,
@@ -150,6 +160,7 @@
 		4F8B857426B04E9200E2560E /* KineticTimerMacTests */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4609826C19CE800A6B8AB /* Core */,
 				4F8B857526B04E9200E2560E /* KineticTimerMacTests.swift */,
 				4F8B857726B04E9200E2560E /* Info.plist */,
 			);
@@ -201,6 +212,23 @@
 				4FF4608726BC202B00A6B8AB /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4FF4609126C1683300A6B8AB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4609226C1689B00A6B8AB /* Time.swift */,
+				4FF4609526C1734D00A6B8AB /* Always.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4FF4609826C19CE800A6B8AB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,11 +367,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF4609326C1689B00A6B8AB /* Time.swift in Sources */,
 				4FF4608826BC202B00A6B8AB /* DataService.swift in Sources */,
 				4F8B856226B04E9000E2560E /* ContentView.swift in Sources */,
 				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
 				4FDF197426B65E0500F7FC24 /* TimerController.swift in Sources */,
 				4FDF198C26B9A5D900F7FC24 /* TimerListView.swift in Sources */,
+				4FF4609626C1734D00A6B8AB /* Always.swift in Sources */,
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
 				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
 				4FDF197C26B827E100F7FC24 /* TimerWindowController.swift in Sources */,
@@ -359,7 +389,11 @@
 			files = (
 				4FF4608D26BC22C400A6B8AB /* Stash.xcdatamodeld in Sources */,
 				4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */,
+				4FF4609426C1689B00A6B8AB /* Time.swift in Sources */,
 				4FF4608926BC202B00A6B8AB /* DataService.swift in Sources */,
+				4FF4609726C1734D00A6B8AB /* Always.swift in Sources */,
+				4FF4609B26C19D1100A6B8AB /* AlwaysTests.swift in Sources */,
+				4F5BE56026C1A07F00A18516 /* TimerDescription.swift in Sources */,
 				4FF4609026BC242400A6B8AB /* PersisteneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
