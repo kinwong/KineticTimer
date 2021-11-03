@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct TimerListView: View {
-    @StateObject var model = Model()
-    
-    init(viewModel: Model = .init()) {
+    @StateObject var model = ViewModel()
+
+    init(viewModel: ViewModel = .init()) {
         _model = StateObject(wrappedValue: viewModel)
     }
-    
-    var data: DataService? = nil {
+
+    var data: DataService? {
         didSet {
             refresh()
         }
     }
-    
+
     var body: some View {
         List(model.timers) { timer in
             Text(timer.description)
@@ -28,24 +28,23 @@ struct TimerListView: View {
             refresh()
         })
     }
-    
+
     func refresh() {
     }
 }
 
 extension TimerListView {
-    final class Model: ObservableObject {
-        @Published var timers = [TimerDescription]()
+    final class ViewModel: ObservableObject {
+        @Published var timers = [TimerModel]()
     }
 }
 
 struct TimerListView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = TimerListView.Model()
-        model.timers.append(TimerDescription(id: 1, description: "Timer 1"))
-        model.timers.append(TimerDescription(id: 2, description: "Timer 2"))
-        model.timers.append(TimerDescription(id: 3, description: "Timer 3"))
+        let model = TimerListView.ViewModel()
+        model.timers.append(TimerModel(id: 1, description: "Timer 1"))
+        model.timers.append(TimerModel(id: 2, description: "Timer 2"))
+        model.timers.append(TimerModel(id: 3, description: "Timer 3"))
         return TimerListView(viewModel: model)
     }
 }
-

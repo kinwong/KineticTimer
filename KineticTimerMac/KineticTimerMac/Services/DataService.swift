@@ -8,16 +8,16 @@
 import Foundation
 
 protocol  DataService {
-    func getTimers(completion: @escaping ([TimerDescription]) -> Void)
+    func getTimers(completion: @escaping ([TimerModel]) -> Void)
 }
-    
+
 final class DataServiceImpl: DataService {
-    func getTimers(completion: @escaping ([TimerDescription]) -> Void) {
+    func getTimers(completion: @escaping ([TimerModel]) -> Void) {
         DispatchQueue.main.async {
             completion([
-                TimerDescription(id: 1, description: "Test Timer 1"),
-                TimerDescription(id: 2, description: "Test Timer 1"),
-                TimerDescription(id: 3, description: "Test Timer 1"),
+                TimerModel(id: 1, description: "Test Timer 1"),
+                TimerModel(id: 2, description: "Test Timer 1"),
+                TimerModel(id: 3, description: "Test Timer 1")
             ])
         }
     }

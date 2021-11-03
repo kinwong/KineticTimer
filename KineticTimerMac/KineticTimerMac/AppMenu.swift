@@ -8,8 +8,8 @@
 import Foundation
 import Cocoa
 
-class AppMenu : NSMenu {
-    var appDelegate: AppDelegate? = nil {
+class AppMenu: NSMenu {
+    var appDelegate: AppDelegate? {
         willSet(newAppDelegate) {
             removeAllItems()
             if let appDelegate = newAppDelegate {
@@ -17,11 +17,11 @@ class AppMenu : NSMenu {
             }
         }
     }
-    
+
     override init(title: String) {
         super.init(title: title)
     }
-    
+
     required init(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -38,7 +38,7 @@ class AppMenu : NSMenu {
             NSMenuItem(title: "30 minutes", action: #selector(delegate.setTimer30Mins), keyEquivalent: ""),
             NSMenuItem(title: "45 minutes", action: #selector(delegate.setTimer45Mins), keyEquivalent: ""),
             NSMenuItem(title: "1 hour", action: #selector(delegate.setTimer1Hour), keyEquivalent: ""),
-            NSMenuItem(title: "2 hours", action: #selector(delegate.setTimer2Hours), keyEquivalent: ""),
+            NSMenuItem(title: "2 hours", action: #selector(delegate.setTimer2Hours), keyEquivalent: "")
         ]
         items = [
             addTimer,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TimerDescription: Identifiable {
+struct TimerModel: Identifiable {
     var id: Int
-    var description : String = ""
+    var description: String = ""
 }
