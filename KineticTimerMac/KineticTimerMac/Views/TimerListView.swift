@@ -11,7 +11,7 @@ struct TimerListView: View {
     @StateObject var model = ViewModel()
 
     init(viewModel: ViewModel = .init()) {
-        _model = StateObject(wrappedValue: viewModel)
+        // _model = StateObject(wrappedValue: viewModel)
     }
 
     var data: DataService? {

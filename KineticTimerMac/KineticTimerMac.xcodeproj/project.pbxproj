@@ -28,11 +28,6 @@
 		4FDF198F26BC104300F7FC24 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF198E26BC104300F7FC24 /* TimerModel.swift */; };
 		4FF4608826BC202B00A6B8AB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608726BC202B00A6B8AB /* DataService.swift */; };
 		4FF4608926BC202B00A6B8AB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4608726BC202B00A6B8AB /* DataService.swift */; };
-		4FF4609326C1689B00A6B8AB /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609226C1689B00A6B8AB /* Time.swift */; };
-		4FF4609426C1689B00A6B8AB /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609226C1689B00A6B8AB /* Time.swift */; };
-		4FF4609626C1734D00A6B8AB /* Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609526C1734D00A6B8AB /* Always.swift */; };
-		4FF4609726C1734D00A6B8AB /* Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609526C1734D00A6B8AB /* Always.swift */; };
-		4FF4609B26C19D1100A6B8AB /* AlwaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,9 +72,6 @@
 		4FDF198B26B9A5D900F7FC24 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		4FDF198E26BC104300F7FC24 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		4FF4608726BC202B00A6B8AB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		4FF4609226C1689B00A6B8AB /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		4FF4609526C1734D00A6B8AB /* Always.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Always.swift; sourceTree = "<group>"; };
-		4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,8 +206,6 @@
 		4FF4609126C1683300A6B8AB /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4FF4609226C1689B00A6B8AB /* Time.swift */,
-				4FF4609526C1734D00A6B8AB /* Always.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -223,7 +213,6 @@
 		4FF4609826C19CE800A6B8AB /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4FF4609926C19D1100A6B8AB /* AlwaysTests.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -385,13 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF4609326C1689B00A6B8AB /* Time.swift in Sources */,
 				4FF4608826BC202B00A6B8AB /* DataService.swift in Sources */,
 				4F8B856226B04E9000E2560E /* ContentView.swift in Sources */,
 				4F8B858F26B04F5300E2560E /* StatusBarController.swift in Sources */,
 				4FDF197426B65E0500F7FC24 /* TimerController.swift in Sources */,
 				4FDF198C26B9A5D900F7FC24 /* TimerListView.swift in Sources */,
-				4FF4609626C1734D00A6B8AB /* Always.swift in Sources */,
 				4F8B856026B04E9000E2560E /* AppDelegate.swift in Sources */,
 				4F8B859226B2D19900E2560E /* AppMenu.swift in Sources */,
 				4F5BE56226C2ACED00A18516 /* TimerEdit.swift in Sources */,
@@ -405,11 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8B857626B04E9200E2560E /* KineticTimerMacTests.swift in Sources */,
-				4FF4609426C1689B00A6B8AB /* Time.swift in Sources */,
 				4FF4608926BC202B00A6B8AB /* DataService.swift in Sources */,
-				4FF4609726C1734D00A6B8AB /* Always.swift in Sources */,
 				4F5BE56326C2ACED00A18516 /* TimerEdit.swift in Sources */,
-				4FF4609B26C19D1100A6B8AB /* AlwaysTests.swift in Sources */,
 				4F5BE56026C1A07F00A18516 /* TimerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -556,7 +540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -583,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -608,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leadingmen.KineticTimerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
